@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'proyecto-prefinal';
+  mostrarSaludo: boolean = true;
+
+  ocultarSaludo() {
+    this.mostrarSaludo = false;}
+
 }
