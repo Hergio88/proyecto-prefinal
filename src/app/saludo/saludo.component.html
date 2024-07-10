@@ -1,1 +1,6 @@
-<p>saludo works!</p>
+<div [ngClass]="{'fuente-rojo': fuenteSaludo === 'rojo', 'fuente-verde': fuenteSaludo === 'verde'}">
+  <p>!Este es un saludo personalizado para MR.:{{ nombre }}!</p>
+</div>
+
+<button (click)="cambiarFuenteRojo()">Cambiar fuente a Rojo</button>
+<button (click)="cambiarFuenteVerde()">Cambiar fuete a Verde</button>

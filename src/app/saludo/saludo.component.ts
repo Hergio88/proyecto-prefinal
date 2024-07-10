@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class SaludoComponent {
 
+  nombre: string = 'Sergio Garcia';
+  fuenteSaludo: string = ''; //
+
+  constructor() { }
+
+  cambiarFuenteRojo() {
+    this.fuenteSaludo = 'rojo';
+  }
+
+  cambiarFuenteVerde() {
+    this.fuenteSaludo = 'verde';
+  }
+
+
 }
